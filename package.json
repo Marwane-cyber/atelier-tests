@@ -7,10 +7,14 @@
     "test:unit": "jest tests/unit --coverage",
     "test:integration": "jest tests/integration",
     "test:int": "jest tests/integration --runInBand",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:cov": "jest --runInBand --coverage"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/e2e/"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/e2e/"
+    ]
   },
   "dependencies": {
     "express": "^4.19.2",
